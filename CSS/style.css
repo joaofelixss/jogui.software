@@ -1,0 +1,172 @@
+/*GLOBAL*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 100%;
+  background: #051933;
+}
+
+ul {
+  list-style: none;
+}
+
+/*HEADER*/
+.header-contanier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  max-width: 100%;
+  margin-left: 60px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 60px;
+}
+
+.menu li {
+  margin: 15px;
+}
+
+.menu li a {
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.menu .cadastrese-botao a {
+  background: #ffba05;
+  color: #051933;
+  font-weight: 600;
+  padding: 13px;
+}
+
+.menu .cadastrese-botao a:hover {
+  background: #ffffff;
+  color: #051933;
+}
+
+.menu li a:hover {
+  color: #ffba05;
+}
+
+/*INTRODUCAO*/
+.contanier-introducao {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 80px;
+}
+
+.introducao-img img {
+  display: block;
+  max-width: 100%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.introducao-nome {
+  display: grid;
+  justify-content: start;
+  padding: 50px;
+  color: white;
+}
+
+/*FOOTER*/
+.footer {
+  background: white;
+  margin-top: 70px;
+}
+
+.footer h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #051933;
+}
+
+/*PLANOS*/
+.contanier-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  margin: 100px 50px;
+  justify-content: center;
+  gap: 100px;
+}
+
+.landing-page {
+  background: #2b4bb4;
+  border-radius: 10px;
+}
+
+.ecomerce {
+  background: #972e2af5;
+  border-radius: 10px;
+}
+
+.landing-page h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.ecomerce h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.landing-page h1 span {
+  color: rgb(32, 207, 70);
+}
+
+.ecomerce h1 span {
+  color: rgb(32, 207, 70);
+}
+
+.ecomerce a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgb(32, 207, 70);
+  padding: 13px;
+  border-radius: 10px;
+  display: block;
+}
+
+.landing-page a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgb(32, 207, 70);
+  padding: 13px;
+  border-radius: 10px;
+  display: block;
+}
+
+.landing-page a:hover {
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+.ecomerce a:hover {
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+}

@@ -1,0 +1,89 @@
+/*GLOBAL*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../img/IDEAS DE NEGOCIOS VIRTUALES CON POCA INVERSIÓN.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cadastrese{
+  display: grid;
+  place-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.cadastrese p {
+  font-size: 16px;
+  color: white;
+}
+
+.cadastrese a {
+  font-size: 16px;
+  color: #ffba05;
+  text-decoration: none;
+}
+
+.cadastrese h1 {
+  color: white;
+  padding: 30px;
+}
+
+.input-img {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.input-img img {
+  width: 30px;
+  height: 30px;
+}
+
+.input-img input:focus-visible {
+  outline: none;
+}
+
+.input-img input {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+.contanier-cadastrese {
+  display: grid;
+  justify-content: center;
+  margin: 100px;
+  text-align: center;
+  background: #051933;
+  max-width: 500px;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.botao {
+  background: #ffba05;
+  color: #051933;
+  font-weight: 600;
+  padding: 13px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #ffffff;
+  color: #051933;
+}
