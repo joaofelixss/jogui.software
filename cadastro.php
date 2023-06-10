@@ -1,10 +1,35 @@
 <?php
-include_once('config/connection.php');
-?>
+//se existir a variável submit
+if(isset($_POST['submit']))
+//ele vai salvar nosso banco de dados
+{
+  /*print_r('Nome: ' . $_POST['nome']);
+  print_r('<br>');
+  print_r('email: ' . $_POST['email']);
+  print_r('<br>');
+  print_r('senha: ' . $_POST['senha']);
+  print_r('<br>');
+  print_r('telefone: ' . $_POST['telefone']);
+  print_r('<br>');
+  print_r('cidade: ' . $_POST['cidade']);
+  print_r('<br>');
+  print_r('estado: ' . $_POST['estado']);*/
 
-<?php
+  include_once('config/connection.php');
 
-  print_r($_POST['submit']);
+  //agora vamos criar uma variável para cada dado
+  $nome = $_POST['nome'];
+  $senha = $_POST['senha'];
+  $email = $_POST['email'];
+  $telefone = $_POST['telefone'];
+  $cidade = $_POST['cidade'];
+  $estado = $_POST['estado'];
+
+  //vamos conectar com a nossa conexão do banco e inserir os dados
+  $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, senha, email, telefone, cidade, estado) VALUES ('$nome', '$senha', '$email', '$telefone', '$cidade', '$estado')");
+
+  header('Location: login.php');
+}
 
 ?>
 
@@ -53,27 +78,27 @@ include_once('config/connection.php');
       <form action="cadastro.php" method = "POST">
           <div class="input-img">
             <img src="img/nome.png" alt="nome">
-            <input type="text" name = "nome" placeholder = "Escreva seu nome">
+            <input type="text" name = "nome" id="nome" placeholder = "Escreva seu nome">
           </div>
           <div class="input-img">
-            <img src="img/senha.png" alt="nome">
-            <input type="password" name = "senha" placeholder = "Escreva sua senha">
+            <img src="img/senha.png" alt="senha">
+            <input type="password" name = "senha" id="senha"  placeholder = "Escreva sua senha">
           </div>
           <div class="input-img">
-            <img src="img/email.png" alt="nome">
-            <input type="email" name = "email" placeholder = "Email">
+            <img src="img/email.png" alt="email">
+            <input type="email" name = "email" id="email" placeholder = "Email">
           </div>
           <div class="input-img">
-            <img src="img/telefone.png" alt="nome">
-            <input type="text" name = "telefone" placeholder = "Telefone">
+            <img src="img/telefone.png" alt="telefone">
+            <input type="text" name = "telefone" id="telefone" placeholder = "Telefone">
           </div>
           <div class="input-img">
-            <img src="img/cidade.png" alt="nome">
-            <input type="text" name = "cidade" placeholder = "Cidade">
+            <img src="img/cidade.png" alt="cidade">
+            <input type="text" name = "cidade" id="cidade" placeholder = "Cidade">
           </div>
           <div class="input-img">
-            <img src="img/estado.png" alt="nome">
-            <input type="text" name = "estado" placeholder = "Estado">
+            <img src="img/estado.png" alt="estado">
+            <input type="text" name = "estado" id="estado" placeholder = "Estado">
           </div>
             <input class = "botao" type="submit" name= "submit" value = "Cadastrar">
           </div>

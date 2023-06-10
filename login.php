@@ -44,11 +44,11 @@ include_once('config/connection.php');
   <article class="cadastrese">
     <div class="contanier-cadastrese">
       <p>Ainda não possui cadastro?<a href="cadastro.php">Clique Aqui</a></p>
-      <h1>Cadastre-se</h1>
+      <h1>Faça o seu Login</h1>
       <form action="testeLogin.php" method = "POST">
         <div class="input-img">
-          <img src="img/nome.png" alt="nome">
-          <input type="text" name = "nome" placeholder = "Escreva seu nome">
+          <img src="img/email.png" alt="email">
+          <input type="text" name = "email" placeholder = "Escreva seu email">
         </div>
         <div class="input-img">
           <img src="img/senha.png" alt="senha">
