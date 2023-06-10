@@ -2,32 +2,6 @@
 include_once('config/connection.php');
 ?>
 
-<?php
-
-  $validacoes = [];
-
-  if(count($_POST) > 0){
-
-    if($_POST['nome'] === ""){
-      $validacoes[] = "Preencha seu nome";
-    }
-
-  if($_POST['senha'] === ""){
-      $validacoes[] = "Preencha sua senha";
-    }
-  }
-?>
-
-<?php if(count($validacoes)): ?>
-
-  <ul>
-   <?php foreach($validacoes as $validacao): ?>
-     <li><?= $validacao ?></li>
-    <?php endforeach; ?>
-  </ul>
-
-<?php endif; ?>
-
 </style>
 <!DOCTYPE html>
 <html lang="en pt-br">

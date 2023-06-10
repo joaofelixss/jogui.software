@@ -33,32 +33,6 @@ if(isset($_POST['submit']))
 
 ?>
 
-<?php
-
-  $validacoes = [];
-
-  if(count($_POST) > 0){
-
-    if($_POST['nome'] === ""){
-      $validacoes[] = "Preencha seu nome";
-    }
-
-  if($_POST['email'] === ""){
-      $validacoes[] = "Preencha seu email";
-    }
-  }
-?>
-
-<?php if(count($validacoes)): ?>
-
-  <ul>
-   <?php foreach($validacoes as $validacao): ?>
-     <li><?= $validacao ?></li>
-    <?php endforeach; ?>
-  </ul>
-
-<?php endif; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
